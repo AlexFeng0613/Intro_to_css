@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        
+        ul {
+            list-style-type: none;
+            margin:1 px;
+        }
+        nav > ul > li {
+            display: inline-block;
+            float: left;
+            padding: 0.5em 0.75em;
+        }
+
+        nav > ul > li.settings {
+            float: right;
+            width:8.75em;
+        }
+
+        nav > ul > li.settings:hover > ul {
+            display: block;
+        }
+
+
+
+        /*ul {
+            list-style-type: none;
+        }*/
+
+        li:hover > ul{
+            background-color: yellow;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li class="settings">Settings
+                <ul>
+                    <li>My Profile</li>
+                    <li>Account Settings</li>
+                    <li>Payment</li>
+                    <li>Logout</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

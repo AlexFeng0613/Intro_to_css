@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            padding: 1em;
+            background-color: rgba(255,0,0,1);
+        }
+
+        div.parent div {
+            background-color: green;
+        }
+
+        div.child.someclass {
+            background-color: black;
+        }
+
+        li.second + li{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Parent
+        <div class="child someclass">
+            Child
+            <div class="desc">
+                desc
+            </div>
+        </div>
+    </div>
+
+    <ul>
+        <li>1</li>
+        <li class="second">2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>
